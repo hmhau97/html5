@@ -9,16 +9,14 @@
     font-size: 15px;
  }
  .logo{
- 	margin-left: 50px;
+ 	display: inline-block;
+ 	margin-left: 100px;
  }
 .container{
 	width: 100%;
     margin-right: auto;
     margin-left: auto;
  }
-.logo{
-	display: inline-block;
-}
 .nav-menu{
 	display: inline-block;
 	position: absolute;
@@ -27,6 +25,7 @@
 }
 .item-link{
 	margin: 10px;
+	padding-bottom: 5px;
 	text-decoration: none;
 	position: relative;
 	color: #333;
@@ -35,7 +34,7 @@
 	content: '';
 	position: absolute;
 	width: 0%;
-	height: 2px;
+	height: 3px;
 	left:0;
 	bottom: 0;
 	opacity: 0;
@@ -51,16 +50,18 @@
 .menu-item{
 	display: inline-block;
 	position: relative;
+	padding: 5px 15px;
 }
 .sub-menu{
 	/*margin: -20px 0;*/
 	position: absolute;
     visibility: hidden;
-	left:0;
+    width: 100%;
 	top: calc(100% + 10px);
 	opacity: 0;
 	box-shadow: 0 0  10px #666;
-	padding: 5px;
+	background: white;
+	margin-top: 2px;
 }
 .menu-item:hover .sub-menu{
 	visibility: visible;
